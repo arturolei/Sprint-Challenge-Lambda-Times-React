@@ -14,15 +14,23 @@ export default class Carousel extends Component {
   }
 
   leftClick = () => {
-
+    if(this.state.imageIndex > 0){
+      this.setState(prevState => ({imageIndex: prevState.imageIndex - 1}));
+    } else {
+      this.setState(prevState =>({imageIndex: this.state.imageURLs.length - 1}))
+    }
   }
 
   rightClick = () => {
-
+    if (this.state.imageIndex < this.state.imageURLs.length - 1){
+      this.setState(prevState => ({imageIndex: prevState.imageIndex + 1}))
+    } else {
+      this.setState(prevState => ({imageIndex:0}))
+    }
   }
 
   selectedImage = () => {
-    return <img src={this.state.imageURLs[this.state.imageIndex]} style={{display: 'block'}} />
+    return <img src={this.state.imageURLs[this.state.imageIndex]} style={{display: 'block'}} alt={this.state.imageURLs[this.state.imageIndex]} />
   }
   
   render(){
