@@ -2,7 +2,7 @@
  *PropTypes are a way to ensure the type of data being passed around between certain components is the type of data that is requested. That is, if we expect a component to receive a string as part of the props, we can check if that props element is a string* 
 
 - [X] Describe a life-cycle event in React?
-*A Life-Cycle Event in React is a method that we can use on React Components. Examples of Life Cycle methods include componentDidMount or setState; these methods are connected to the set of phases in a component's lifecycle (Birth/Mounting, Growth/Updating, and Death/Unmounting*
+*A Life-Cycle Event in React is a method that we can use on React Components. Examples of Life Cycle methods include componentDidMount or render; these methods are connected to the set of phases in a component's lifecycle (Birth/Mounting, Growth/Updating, and Death/Unmounting*
 
 - [X] Explain the details of a Higher Order Component?
 *Higher Order Components are advanced React JS design pattern that lets us reuse component logic. A HOC is a function that receives a component as an arugment and returns a new component. HOC's benefit from React's compositional nature*
