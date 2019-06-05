@@ -15,8 +15,6 @@ const Tab = props => {
     classNameVal = "tab";
   }*/
 
-    
-    
   return (
       <div
         className={props.selectedTab === props.tab ? "tab active-tab":"tab"}
